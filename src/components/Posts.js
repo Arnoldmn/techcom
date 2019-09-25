@@ -4,7 +4,7 @@ class Posts extends Component {
     render() {
         return (
             <div>
-                <h1>LevelUpTest</h1>
+                <h1>Post articles</h1>
             </div>
         )
     }
