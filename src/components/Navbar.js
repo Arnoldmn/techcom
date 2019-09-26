@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'react-router-dom/Link';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -9,9 +10,10 @@ class Navbar extends Component {
         return (
             <AppBar>
                 <Toolbar>
-                    <Button color="inherit">LOGO</Button>
-                    <Button color="inherit">Home</Button>
-                    <Button color="inherit">Notifications</Button>
+                    <h1>Logo</h1>
+                    <Button color="inherit" component={Link} to="/">LOGO</Button>
+                    <Button color="inherit" to="/">Home</Button>
+                    <Button color="inherit" to="">Notifications</Button>
                 </Toolbar>
             </AppBar>
         )
